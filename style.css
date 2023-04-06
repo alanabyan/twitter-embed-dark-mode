@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+body {
+    height: 100vh;
+    background-color: #1E1E1E;
+}
+
+/* LIGHT MODE START */
+.light {
+    background-color: #ecf8ff;
+}
+
+.light .container {
+    background-color: #fff;
+}
+
+.light .profile span {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.light .profile a {
+    color: #000;
+}
+
+.light .info {
+    color: #000;
+}
+
+.light .footer {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.light .like {
+    background-image: url(like1.svg);
+    background-repeat: no-repeat;
+}
+
+.light .like a {
+    color: rgba(0, 0, 0, 0.6);
+}
+/* LIGHT MODE END */
+.container {
+    position: relative;
+    display: flex;
+    background-color: #243447;
+    width: 601px;
+    height: 228px;
+    justify-content: center;
+    align-items: center;
+    margin:auto;
+    top: 186px;
+    border-radius: 12px;
+}
+
+.content {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+}
+
+.header {
+   
+    width: 601px;
+    padding-right: 31px;
+    padding-left: 31px;
+    padding-bottom: 100px;
+    
+
+}
+
+.profile {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative;
+    /* top: -15px; */
+    left: -5px;
+    margin-top: 105px;
+}
+
+.profile a {
+    color: #fff;
+    font-weight: 700;
+}
+
+.profile span {
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.6);
+    margin-right: 325px;
+}
+
+.profile a img {
+    position: relative;
+    top: -6px;
+    margin-right: 10px;
+}
+
+.info {
+    margin: 15px 0;
+    color: #fff;
+}
+
+.info a {
+    color: #1DA1F2;
+}
+
+.footer {
+    display: flex;
+    /* justify-content: space-around; */
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.like a{
+    position: relative;
+    top: -6px;
+    margin-left: 10px;
+    margin-right: 20px;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.date {
+    position: relative;
+    top: 2px;
+}
+
+.button {
+    position: relative;
+    margin-left: 69vw;
+    overflow-x: hidden;
+    top: 190px;
+    z-index: 1;
+}
+
+input[type="checkbox"] {
+    position: relative;
+    width: 40px;
+    height: 20px;
+    appearance: none;
+    background-color: #fcfcfc;
+    outline: none;
+    border-radius: 10px;
+    transition: .5s ease;
+    cursor: pointer;
+}
+
+input[type="checkbox"]:checked {
+    background-color: #3664ff;
+}
+
+input[type="checkbox"]::before {
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background-color: #434343;
+    border-radius: 50%;
+    top: 2px;
+    left: 2px;
+    transition: .5s ease;
+}
+
+input[type="checkbox"]:checked::before {
+    transform: translateX(20px);
+}
